@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1037279243425",
+    "project_id": "gasbay-76ce8",
+    "storage_bucket": "gasbay-76ce8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037279243425:android:4a71081ba5f41d31f414e0",
+        "android_client_info": {
+          "package_name": "cf.onescode.gasbay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037279243425-tp65vcei6ti5vjlbkcmib2492dadu1ol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnwrGVrlewXpBDXruuWDXXW895-7PzQ9M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1037279243425-tp65vcei6ti5vjlbkcmib2492dadu1ol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
