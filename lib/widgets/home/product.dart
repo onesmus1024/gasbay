@@ -23,8 +23,7 @@ class Products extends StatelessWidget {
                             MaterialPageRoute(
                               builder: (context) => ProductDetail(
                                 id: 'ones',
-                                image:
-                                    'https://media.istockphoto.com/photos/different-types-of-gas-bottles-isolated-on-white-background-picture-id1288462295?b=1&k=20&m=1288462295&s=170667a&w=0&h=N1OAtzdtQDaUjvUozRFUximkNmpYeIX8BQl-V5citVk=',
+                                image:snapshot.data.docs[index].data()['imageUrl'],
                                 description: snapshot.data.docs[index]
                                     .data()['description'],
                                 price:
@@ -35,7 +34,7 @@ class Products extends StatelessWidget {
                       child: Container(
                           margin: const EdgeInsets.all(20),
                           width: 300,
-                          height: MediaQuery.of(context).size.height / 4,
+                          height: MediaQuery.of(context).size.height / 3,
                           decoration: const BoxDecoration(
                             borderRadius: BorderRadius.only(
                                 bottomLeft: Radius.circular(20),
@@ -46,14 +45,14 @@ class Products extends StatelessWidget {
                             children: [
                               Container(
                                 height: 200,
-                                width: MediaQuery.of(context).size.width/2.5,
+                                width: MediaQuery.of(context).size.width*0.5,
                                 decoration: const BoxDecoration(
                                   shape: BoxShape.circle,
                                   color: Colors.white,
                                 ),
                                 child: Image.network(
-                                  'https://media.istockphoto.com/photos/different-types-of-gas-bottles-isolated-on-white-background-picture-id1288462295?b=1&k=20&m=1288462295&s=170667a&w=0&h=N1OAtzdtQDaUjvUozRFUximkNmpYeIX8BQl-V5citVk=',
-                                  fit: BoxFit.fitWidth,
+                                  snapshot.data.docs[index].data()['imageUrl'],
+                                  fit: BoxFit.cover,
                                   loadingBuilder:
                                       (context, child, loadingProgress) {
                                     if (loadingProgress == null) {

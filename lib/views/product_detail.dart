@@ -47,6 +47,7 @@ class _ProductDetailState extends State<ProductDetail> {
                   child: Image.network(
                     widget.image,
                     width: double.infinity,
+                    height: MediaQuery.of(context).size.height * 0.5,
                     fit: BoxFit.cover,
                     loadingBuilder: (context, child, loadingProgress) {
                       if (loadingProgress == null) {
@@ -90,7 +91,7 @@ class _ProductDetailState extends State<ProductDetail> {
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) =>
-                                        Checkout(amount: widget.price,productId: widget.id,)))
+                                        Checkout(amount: widget.price,productId: widget.id,image:widget.image)))
                           },
                       child: const Text("order now")),
                 ],

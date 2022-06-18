@@ -7,11 +7,12 @@ import 'package:gasbay/views/home.dart';
 
 // ignore: must_be_immutable
 class Checkout extends StatefulWidget {
-  Checkout({Key? key, required this.amount, required this.productId})
+  Checkout({Key? key, required this.amount, required this.productId,required this.image})
       : super(key: key);
   static const routeName = '/checkout';
   double amount;
   String productId;
+  String image;
 
   @override
   State<Checkout> createState() => _CheckoutState();
@@ -159,6 +160,7 @@ class _CheckoutState extends State<Checkout> {
                         'isDelivered': false,
                         'isCancelled': false,
                         'isPicked': false,
+                        'imageUrl': widget.image,
                         'orderDate': DateTime.now()
                       });
                     },

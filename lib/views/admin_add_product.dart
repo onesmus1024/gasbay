@@ -1,10 +1,9 @@
-import 'package:firebase_auth/firebase_auth.dart';
+
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
-
 import 'admin_home.dart';
 
 class AdminAddProduct extends StatefulWidget {
@@ -28,17 +27,25 @@ class _AdminAddProductState extends State<AdminAddProduct> {
     setState(() {
       _image = image!;
     });
-    final ref =FirebaseStorage.instance.ref().child('prodiuct_images/').child(FirebaseAuth.instance.currentUser!.uid+'.jpg');
+    await _uploadImage();
+
+    
+  }
+
+  Future<void> _uploadImage() async {
+     final ref =FirebaseStorage.instance.ref().child('product_images/').child('IMG'+Timestamp.now().toString()+'.jpg');
     if(_image != null ){
-       ref.putFile(File(_image!.path));
-        setState(() async {
-      imageurl= await ref.getDownloadURL();
-  
+       await ref.putFile(File(_image!.path));
+       String url = await ref.getDownloadURL();
+      
+        setState((){
+      imageurl= url;
     });
+    print("image test" +imageurl);
+    
 
     }
 
-   
   }
   
   
@@ -50,13 +57,14 @@ class _AdminAddProductState extends State<AdminAddProduct> {
     
     if(_form.currentState!.validate())
     {
+      
       _form.currentState!.save();
        FirebaseFirestore.instance.collection('products').add({
       'name': name,
       'description':description,
       'price':price,
       'gasType':gasType,
-      'imageurl': imageurl,
+      'imageUrl': imageurl,
       'isAvailable':true,
 
     }).then((value) => {
@@ -158,7 +166,7 @@ class _AdminAddProductState extends State<AdminAddProduct> {
                   Row(
                     children: [
                     _image != null?
-                    Image.file(File(_image!.path),width: 200,height: 200):const Text("No image selected"),
+                    Image.file(File(_image!.path),width: MediaQuery.of(context).size.width*0.5,height: 200):const Text("No image selected"),
                     const SizedBox(
                       width: 20,
                     ),
@@ -167,6 +175,9 @@ class _AdminAddProductState extends State<AdminAddProduct> {
                       onPressed:() async {
                         await  _getImage();
                       },
+                      style:ElevatedButton.styleFrom(
+                        fixedSize: Size(MediaQuery.of(context).size.width*0.2, 10)
+                      )
                     ),
                     ],
                   )
