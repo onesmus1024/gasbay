@@ -1,12 +1,11 @@
 # gasbay
 <p>
 
-<img src="https://drive.google.com/file/d/1iELVKN5X5XBTUVz-UNi4PVwzbmwMuYGv/view?usp=sharing" alt='icon'/>
-<a href="https://travis-ci.org/laravel/framework"><img src="https://drive.google.com/file/d/1h7sCOoz4X21BVp88EOtK3au483vHN_p6/view?usp=sharing" alt="Build Status"></a>
-A new Flutter project.
-![image](https://drive.google.com/file/d/1h7sCOoz4X21BVp88EOtK3au483vHN_p6/view?usp=sharing)
+<img src="https://drive.google.com/uc?export=view&id=1iELVKN5X5XBTUVz-UNi4PVwzbmwMuYGv" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
-<img src="https://drive.google.com/file/d/1h7sCOoz4X21BVp88EOtK3au483vHN_p6/view?usp=sharing" alt='display'/>
+
+A new Flutter project.
+
 
 <a href="https://drive.google.com/uc?export=view&id=1h7sCOoz4X21BVp88EOtK3au483vHN_p6"><img src="https://drive.google.com/uc?export=view&id=1h7sCOoz4X21BVp88EOtK3au483vHN_p6" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
