@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:gasbay/keys/globay_key.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';

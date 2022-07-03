@@ -41,9 +41,7 @@ class _AdminAddProductState extends State<AdminAddProduct> {
         setState((){
       imageurl= url;
     });
-    print("image test" +imageurl);
     
-
     }
 
   }

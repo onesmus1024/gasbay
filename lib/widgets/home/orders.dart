@@ -41,7 +41,7 @@ class Orders extends StatelessWidget {
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
                                     children: [
-                                      const Text('Destination'),
+                                      const Text('Destination  '),
                                       Text(snapshot.data[index]['destination'])
                                     ],
                                   ),

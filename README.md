@@ -1,16 +1,25 @@
 # gasbay
 
+<img src="https://drive.google.com/file/d/1iELVKN5X5XBTUVz-UNi4PVwzbmwMuYGv/view?usp=sharing">
+
 A new Flutter project.
+
+<img src="https://drive.google.com/file/d/1h7sCOoz4X21BVp88EOtK3au483vHN_p6/view?usp=sharing">
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is an online gas refill  and gas cylinder application .
+The client is about to request for the gas cylinder or gas refill on demand by loggind into the application and make an order.
+## requirement for the project to work on your end
+- google maps api token
+- m-pesa keys for people in kenya and have access to safaricom m-pesa
+- twilio keys to allow messages
 
-A few resources to get you started if this is your first Flutter project:
+### The client is supposed to provide the following
+- Destination
+- Payment
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### Admin side 
+The admin the logs in the application and view the order,if the payment is complete they view the destination by using google maps then the next step is delivering the item
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+

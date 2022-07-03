@@ -22,6 +22,7 @@ class _CheckoutState extends State<Checkout> {
   late String phoneNumber;
   String destination = '';
   final _form = GlobalKey<FormState>();
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(

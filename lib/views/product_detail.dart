@@ -31,6 +31,7 @@ class _ProductDetailState extends State<ProductDetail> {
 
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
       appBar: AppBar(
        
@@ -46,9 +47,9 @@ class _ProductDetailState extends State<ProductDetail> {
                   onDoubleTap: _handlelike,
                   child: Image.network(
                     widget.image,
-                    width: double.infinity,
-                    height: MediaQuery.of(context).size.height * 0.5,
-                    fit: BoxFit.cover,
+                   height:MediaQuery.of(context).size.height*0.4,
+                  width: MediaQuery.of(context).size.width,
+                    fit: BoxFit.scaleDown,
                     loadingBuilder: (context, child, loadingProgress) {
                       if (loadingProgress == null) {
                         showlike = true;

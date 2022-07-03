@@ -7,6 +7,7 @@ class Products extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return StreamBuilder(
       stream: FirebaseFirestore.instance.collection('products').snapshots(),
       initialData: null,
@@ -16,13 +17,14 @@ class Products extends StatelessWidget {
               ? ListView.builder(
                   itemCount: snapshot.data.docs.length,
                   itemBuilder: (BuildContext context, int index) {
+                    
                     return GestureDetector(
                       onTap: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
                               builder: (context) => ProductDetail(
-                                id: 'ones',
+                                id: Timestamp.now().toString(),
                                 image:snapshot.data.docs[index].data()['imageUrl'],
                                 description: snapshot.data.docs[index]
                                     .data()['description'],
@@ -52,7 +54,8 @@ class Products extends StatelessWidget {
                                 ),
                                 child: Image.network(
                                   snapshot.data.docs[index].data()['imageUrl'],
-                                  fit: BoxFit.cover,
+                                  height: 150,
+                                  width: MediaQuery.of(context).size.width * 0.4,
                                   loadingBuilder:
                                       (context, child, loadingProgress) {
                                     if (loadingProgress == null) {
