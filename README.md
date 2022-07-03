@@ -1,15 +1,17 @@
 # gasbay
+<p>
 
-<img src="https://drive.google.com/file/d/1iELVKN5X5XBTUVz-UNi4PVwzbmwMuYGv/view?usp=sharing">
+<img src="https://drive.google.com/file/d/1iELVKN5X5XBTUVz-UNi4PVwzbmwMuYGv/view?usp=sharing" alt='icon'>
 
 A new Flutter project.
 
-<img src="https://drive.google.com/file/d/1h7sCOoz4X21BVp88EOtK3au483vHN_p6/view?usp=sharing">
+<img src="https://drive.google.com/file/d/1h7sCOoz4X21BVp88EOtK3au483vHN_p6/view?usp=sharing" alt='display'>
+</p>
 
 ## Getting Started
 
 This project is an online gas refill  and gas cylinder application .
-The client is about to request for the gas cylinder or gas refill on demand by loggind into the application and make an order.
+The client is about to request for the gas cylinder or gas refill on demand by logging into the application and make an order.
 ## requirement for the project to work on your end
 - google maps api token
 - m-pesa keys for people in kenya and have access to safaricom m-pesa
