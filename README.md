@@ -8,7 +8,7 @@ A new Flutter project.
 
 <img src="https://drive.google.com/file/d/1h7sCOoz4X21BVp88EOtK3au483vHN_p6/view?usp=sharing" alt='display'/>
 
-<a href="https://drive.google.com/uc?export=view&id=1h7sCOoz4X21BVp88EOtK3au483vHN_p6"><img src="https://drive.google.com/uc?export=view&id=<FILEID>" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+<a href="https://drive.google.com/uc?export=view&id=1h7sCOoz4X21BVp88EOtK3au483vHN_p6"><img src="https://drive.google.com/uc?export=view&id=1h7sCOoz4X21BVp88EOtK3au483vHN_p6" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 
 </p>
