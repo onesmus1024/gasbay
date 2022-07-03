@@ -1,11 +1,11 @@
 # gasbay
 <p>
 
-<img src="https://drive.google.com/file/d/1iELVKN5X5XBTUVz-UNi4PVwzbmwMuYGv/view?usp=sharing" alt='icon'>
+<img src="https://drive.google.com/file/d/1iELVKN5X5XBTUVz-UNi4PVwzbmwMuYGv/view?usp=sharing" alt='icon'/>
 
 A new Flutter project.
 
-<img src="https://drive.google.com/file/d/1h7sCOoz4X21BVp88EOtK3au483vHN_p6/view?usp=sharing" alt='display'>
+<img src="https://drive.google.com/file/d/1h7sCOoz4X21BVp88EOtK3au483vHN_p6/view?usp=sharing" alt='display'/>
 </p>
 
 ## Getting Started
