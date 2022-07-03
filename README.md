@@ -1,13 +1,13 @@
 # gasbay
-<p>
+<p align='center' >
 
-<img src="https://drive.google.com/uc?export=view&id=1iELVKN5X5XBTUVz-UNi4PVwzbmwMuYGv" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+<img src="https://drive.google.com/uc?export=view&id=1iELVKN5X5XBTUVz-UNi4PVwzbmwMuYGv"  title="Click to enlarge picture" />
 
 
 A new Flutter project.
 
 
-<a href="https://drive.google.com/uc?export=view&id=1h7sCOoz4X21BVp88EOtK3au483vHN_p6"><img src="https://drive.google.com/uc?export=view&id=1h7sCOoz4X21BVp88EOtK3au483vHN_p6" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+<img src="https://drive.google.com/uc?export=view&id=1h7sCOoz4X21BVp88EOtK3au483vHN_p6"  title="Click to enlarge picture" />
 
 
 </p>
