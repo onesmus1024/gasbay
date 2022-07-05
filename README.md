@@ -28,4 +28,10 @@ The client is about to request for the gas cylinder or gas refill on demand by l
 ### Admin side 
 The admin the logs in the application and view the order,if the payment is complete they view the destination by using google maps then the next step is delivering the item
 
+for those who want to access the admin side write to developer via [email](onesmus1024@gmail.com)
+
+
+# install
+
+To install the application from playstore [click here ](https://play.google.com/store/apps/details?id=cf.onescode.gasbay)
 
